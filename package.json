@@ -1,0 +1,15 @@
+{
+  "name": "GetMyIP",
+  "version": "1.0.0",
+  "description": "Get my ip",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js"
+  },
+  "author": "Bill",
+  "license": "BSD",
+  "dependencies": {
+    "geoip-lite": "^1.4.1"
+  }
+}
