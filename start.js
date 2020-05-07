@@ -58,7 +58,11 @@ http.createServer(function (request, response) {
     let info = "Let me guess you info...\r\n";
     if(device) info += 'Device:' + device + "\r\n";
     if(ip)info += 'IP:' + ip + "\r\n";
-    if(geo)info += 'county:' + geo.country + "\t" + "region:" + geo.region + "\r\rn";
+    if(geo){
+        if(geo.country)info += 'county:' + geo.country + "\r\n";
+        if(geo.region)info += 'region:' + geo.region + "\r\n";
+        if(geo.timezone)info += 'timezone:' + geo.timezone + "\r\n";
+    }
 
     response.end(info);
 }).listen(8888);
