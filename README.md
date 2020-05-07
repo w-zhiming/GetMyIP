@@ -1,12 +1,15 @@
-# 工程说明
+# README
 
-## 开发环境
+## ENV
 
 Nodejs 8.0+
 
-## 运行方式
+## STEP
 
 ```bash
+## pull project.
 git clone git@github.com:w-zhiming/GetMyIP.git
+
+## install denpendcy & run.
 npm install & npm run start
 ```
